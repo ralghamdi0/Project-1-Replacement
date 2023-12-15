@@ -19,7 +19,7 @@ class SoccerSimulatorGUI extends JFrame {
     public SoccerSimulatorGUI() {
         setTitle("Soccer Simulator");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new GridLayout(5, 2));
+        setLayout(new GridLayout(3, 1));
 
         teams = new ArrayList<>();
 
