@@ -1,15 +1,18 @@
-import java.util.ArrayList;
+public class Team{
 
-class Team {
-    String name;
-    ArrayList<Player> roster;
-
-    public Team(String name) {
-        this.name = name;
-        this.roster = new ArrayList<>();
+    public String teamName;
+    public int teamRating;
+    public Team(String teamName, int teamRating){
+        this.teamName=teamName;
+        this.teamRating=teamRating;
     }
 
-    public void addPlayer(Player player) {
-        roster.add(player);
+    public String getTeamName(){
+        return this.teamName;
     }
+
+    public int getTeamRating(){
+        return this.teamRating;
+    }
+
 }

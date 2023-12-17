@@ -1,13 +1,33 @@
-class Player {
-    String name;
-    int speed;
-    int dribbling;
-    int shooting;
+public class Player {
+    public String FirstName;
+    public String LastName;
+    public String Position;
+    public int age;
 
-    public Player(String name, int speed, int dribbling, int shooting) {
-        this.name = name;
-        this.speed = speed;
-        this.dribbling = dribbling;
-        this.shooting = shooting;
+    public Player(){
     }
+
+    public Player(String FirstName, String LastName, String Position, int age){
+        this.FirstName = FirstName;
+        this.LastName = LastName;
+        this.Position = Position;
+        this.age = age;
+    }
+
+    public String getFirstName(){
+        return this.FirstName;
+    }
+
+    public String getLastName(){
+        return this.LastName;
+    }
+
+    public String getPosition(){
+        return this.Position;
+    }
+
+    public int getAge(){
+        return this.age;
+    }
+
 }
